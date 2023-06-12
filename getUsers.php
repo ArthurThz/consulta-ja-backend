@@ -29,8 +29,6 @@ if (($result_users) and ($result_users->rowCount() != 0)) {
             'sexo' => $sexo,
             'telefone' => $telefone,
             'email' => $email
-
-
         ];
     }
 
