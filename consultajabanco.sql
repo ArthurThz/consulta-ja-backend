@@ -29,7 +29,7 @@ CREATE TABLE `consulta` (
   `nome_especialidade` varchar(45) NOT NULL,
   `cpf_paciente` int NOT NULL,
   PRIMARY KEY (`id_consulta`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,6 @@ CREATE TABLE `consulta` (
 
 LOCK TABLES `consulta` WRITE;
 /*!40000 ALTER TABLE `consulta` DISABLE KEYS */;
-INSERT INTO `consulta` VALUES (38,'Maria Alves','Arthur','Alergista',1111111111),(39,'Marcio Correa','Arthur','Alergista',1111111111),(40,'João das Neves','Arthur','Clínico Geral',1111111111);
 /*!40000 ALTER TABLE `consulta` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -79,7 +78,7 @@ CREATE TABLE `medico` (
   `id_especialidade` int NOT NULL,
   `nome_especialidade` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -88,7 +87,7 @@ CREATE TABLE `medico` (
 
 LOCK TABLES `medico` WRITE;
 /*!40000 ALTER TABLE `medico` DISABLE KEYS */;
-INSERT INTO `medico` VALUES (1,'João das Neves',1,'Clínico Geral'),(2,'José da silva',1,'Clínico Geral'),(3,'Fernando Caldeira',1,'Clínico Geral'),(4,'Marcio Correa',2,'Alergista'),(5,'Alvo Dumbledore',2,'Alergista'),(6,'Maria Alves',2,'Alergista');
+INSERT INTO `medico` VALUES (1,'João das Neves',1,'Clínico Geral'),(2,'José da silva',1,'Clínico Geral'),(3,'Fernando Caldeira',1,'Clínico Geral'),(4,'Marcio Correa',2,'Alergista'),(5,'Alvo Dumbledore',2,'Alergista'),(6,'Maria Alves',2,'Alergista'),(7,'Roberta Silva',3,'Psicologia'),(8,'Caio Augusto',3,'Psicologia'),(9,'Mario Luigi',3,'Psicologia'),(10,'Pamela Beesley',4,'Fisioterapia'),(11,'Angela Roberts',4,'Fisioterapia'),(12,'Dwight Shrute',4,'Fisioterapia'),(13,'Michael Scott',5,'Dermatologia'),(14,'Oscar Martinez',5,'Dermatologia'),(15,'Stanley Hudson',5,'Dermatologia');
 /*!40000 ALTER TABLE `medico` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -118,7 +117,7 @@ CREATE TABLE `paciente` (
 
 LOCK TABLES `paciente` WRITE;
 /*!40000 ALTER TABLE `paciente` DISABLE KEYS */;
-INSERT INTO `paciente` VALUES ('teste','teste','2001-01-01',1234567,'teste','masculino','123456789','teste@teste.com'),('theodoro','theodoro','2001-07-20',123123123,'123123123','masculino','11999999999','theodoro@theodoro.com'),('Arthur','Theodoro','2001-07-20',1111111111,'teste','masculino','11999999999','theodoro@theodoro.com'),('joao','das neves','2002-02-02',1312312345,'123567','masculino','123123123123','joao@dasneves.com');
+INSERT INTO `paciente` VALUES ('teste','teste','2001-01-01',1234567,'teste','masculino','123456789','teste@teste.com'),('theodoro','theodoro','2001-07-20',123123123,'123123123','masculino','11999999999','theodoro@theodoro.com'),('Arthur','Theodoro','2001-07-20',1111111111,'teste','masculino','11999999999','theodoro@theodoro.com'),('aaaaaaaa','aaaaaaaaaa','1999-07-20',1231231231,'123123','masculino','12312312312','aaaa@aaaa.com'),('joao','das neves','2002-02-02',1312312345,'123567','masculino','123123123123','joao@dasneves.com');
 /*!40000 ALTER TABLE `paciente` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -131,4 +130,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-06-12 21:24:07
+-- Dump completed on 2023-06-13 16:18:57

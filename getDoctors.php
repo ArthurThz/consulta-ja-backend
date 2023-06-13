@@ -25,8 +25,6 @@ if (($result_doctors) and ($result_doctors->rowCount() != 0)) {
             'nome' => $nome,
             'id_especialidade' => $id_especialidade,
             'nome_especialidade' => $nome_especialidade,
-
-
         ];
     }
 
